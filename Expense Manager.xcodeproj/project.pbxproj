@@ -13,6 +13,8 @@
 		485EEA432DD0903900B17EAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 485EEA392DD0903900B17EAA /* Preview Assets.xcassets */; };
 		485EEA442DD0903900B17EAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 485EEA3B2DD0903900B17EAA /* Assets.xcassets */; };
 		485EEA472DD0914E00B17EAA /* IntroScreen+Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA462DD0914900B17EAA /* IntroScreen+Views.swift */; };
+		485EEA492DD0A56E00B17EAA /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA482DD0A56C00B17EAA /* Tab.swift */; };
+		485EEA4D2DD0A91400B17EAA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA4C2DD0A91000B17EAA /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		485EEA3D2DD0903900B17EAA /* Expense_ManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense_ManagerApp.swift; sourceTree = "<group>"; };
 		485EEA3E2DD0903900B17EAA /* IntroScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroScreen.swift; sourceTree = "<group>"; };
 		485EEA462DD0914900B17EAA /* IntroScreen+Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IntroScreen+Views.swift"; sourceTree = "<group>"; };
+		485EEA482DD0A56C00B17EAA /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		485EEA4C2DD0A91000B17EAA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		485EEA3F2DD0903900B17EAA /* Expense Manager */ = {
 			isa = PBXGroup;
 			children = (
+				485EEA4A2DD0A90000B17EAA /* Helpers */,
 				485EEA382DD0903900B17EAA /* Views */,
 				485EEA452DD0904300B17EAA /* Models */,
 				485EEA3A2DD0903900B17EAA /* Preview Content */,
@@ -85,8 +90,17 @@
 		485EEA452DD0904300B17EAA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				485EEA482DD0A56C00B17EAA /* Tab.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		485EEA4A2DD0A90000B17EAA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				485EEA4C2DD0A91000B17EAA /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,8 +178,10 @@
 			files = (
 				485EEA402DD0903900B17EAA /* IntroScreen.swift in Sources */,
 				485EEA412DD0903900B17EAA /* Expense_ManagerApp.swift in Sources */,
+				485EEA492DD0A56E00B17EAA /* Tab.swift in Sources */,
 				485EEA422DD0903900B17EAA /* ContentView.swift in Sources */,
 				485EEA472DD0914E00B17EAA /* IntroScreen+Views.swift in Sources */,
+				485EEA4D2DD0A91400B17EAA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,7 @@ extension IntroScreen {
             Image(systemName: symbol)
                 .font(.largeTitle)
                 .frame(width: 45)
-                .foregroundStyle(.blue.gradient)
+                .foregroundStyle(appTint.gradient)
             
             VStack(alignment: .leading, spacing: 6) {
                 Text(title)

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct IntroScreen: View {
+    /// Intro visibility status
     @AppStorage("IsFirstTime") private var isFirstTime = true
 
     var body: some View {
@@ -39,7 +40,7 @@ struct IntroScreen: View {
                     .foregroundStyle(.white)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 14)
-                    .background(.blue.gradient, in: .rect(cornerRadius: 12))
+                    .background(appTint.gradient, in: .rect(cornerRadius: 12))
             }
         }
         .padding(15)
