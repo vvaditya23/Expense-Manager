@@ -1,5 +1,5 @@
 //
-//  View+Extensions.swift
+//  View+Extension.swift
 //  Expense Manager
 //
 //  Created by Aditya on 11/05/25.
@@ -25,5 +25,11 @@ extension View {
     func vSpacing(_ alignment: Alignment = .center) -> some View {
         self
             .frame(maxHeight: .infinity, alignment: alignment)
+    }
+
+    func format(date: Date, format: String) -> String {
+        let formformat = DateFormatter()
+        formformat.dateFormat = format
+        return formformat.string(from: date)
     }
 }

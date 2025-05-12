@@ -23,7 +23,8 @@
 		485EEA702DD0D6C800B17EAA /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA6F2DD0D6C800B17EAA /* Charts.swift */; };
 		485EEA722DD0D6D500B17EAA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA712DD0D6D500B17EAA /* Settings.swift */; };
 		485EEA752DD0DEFE00B17EAA /* Recents+Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA742DD0DEF800B17EAA /* Recents+Views.swift */; };
-		485EEA782DD0DFDF00B17EAA /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA772DD0DFDA00B17EAA /* View+Extensions.swift */; };
+		485EEA782DD0DFDF00B17EAA /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA772DD0DFDA00B17EAA /* View+Extension.swift */; };
+		485EEA7A2DD1AF6B00B17EAA /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA792DD1AF6400B17EAA /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +45,8 @@
 		485EEA6F2DD0D6C800B17EAA /* Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
 		485EEA712DD0D6D500B17EAA /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		485EEA742DD0DEF800B17EAA /* Recents+Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recents+Views.swift"; sourceTree = "<group>"; };
-		485EEA772DD0DFDA00B17EAA /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		485EEA772DD0DFDA00B17EAA /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		485EEA792DD1AF6400B17EAA /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				485EEA4C2DD0A91000B17EAA /* Constants.swift */,
-				485EEA772DD0DFDA00B17EAA /* View+Extensions.swift */,
+				485EEA772DD0DFDA00B17EAA /* View+Extension.swift */,
+				485EEA792DD1AF6400B17EAA /* Date+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				485EEA6E2DD0D6BF00B17EAA /* Search.swift in Sources */,
 				485EEA722DD0D6D500B17EAA /* Settings.swift in Sources */,
 				485EEA402DD0903900B17EAA /* IntroScreen.swift in Sources */,
+				485EEA7A2DD1AF6B00B17EAA /* Date+Extension.swift in Sources */,
 				485EEA412DD0903900B17EAA /* Expense_ManagerApp.swift in Sources */,
 				485EEA652DD0D38600B17EAA /* Transaction.swift in Sources */,
 				485EEA492DD0A56E00B17EAA /* Tab.swift in Sources */,
@@ -240,7 +244,7 @@
 				485EEA472DD0914E00B17EAA /* IntroScreen+Views.swift in Sources */,
 				485EEA4D2DD0A91400B17EAA /* Constants.swift in Sources */,
 				485EEA672DD0D49900B17EAA /* TintColor.swift in Sources */,
-				485EEA782DD0DFDF00B17EAA /* View+Extensions.swift in Sources */,
+				485EEA782DD0DFDF00B17EAA /* View+Extension.swift in Sources */,
 				485EEA632DD0D31E00B17EAA /* Categroy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
