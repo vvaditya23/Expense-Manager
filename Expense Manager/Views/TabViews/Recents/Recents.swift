@@ -34,14 +34,17 @@ struct Recents: View {
                             }
                             .hSpacing(.leading)
                             
-                            // Stats card view here
+                            // Overall stats card view
+                            CardView(income: 200, expense: 300)
+
+                            // Custom segmented control here
                         } header: {
                             headerView(size)
                         }
-
                     }
                     .padding(15)
                 }
+                .background(.gray.opacity(0.15))
             }
         }
     }

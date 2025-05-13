@@ -73,7 +73,7 @@ extension Recents {
     /// Opacity increases as user scrolls down
     private func headerBGOpacity(proxy: GeometryProxy) -> CGFloat {
         let minY = proxy.frame(in: .scrollView).minY + safeArea.top // Since we ignored dafe area by applying negative padding, minY starts with safe area top value instead of 0; hence we add safeArea.top
-        return minY > 0 ? 0 : (-minY / 20)
+        return minY > 0 ? 0 : (-minY / 15)
     }
 }
 

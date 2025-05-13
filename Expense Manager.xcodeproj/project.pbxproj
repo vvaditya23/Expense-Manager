@@ -15,7 +15,7 @@
 		485EEA472DD0914E00B17EAA /* IntroScreen+Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA462DD0914900B17EAA /* IntroScreen+Views.swift */; };
 		485EEA492DD0A56E00B17EAA /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA482DD0A56C00B17EAA /* Tab.swift */; };
 		485EEA4D2DD0A91400B17EAA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA4C2DD0A91000B17EAA /* Constants.swift */; };
-		485EEA632DD0D31E00B17EAA /* Categroy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA622DD0D31900B17EAA /* Categroy.swift */; };
+		485EEA632DD0D31E00B17EAA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA622DD0D31900B17EAA /* Category.swift */; };
 		485EEA652DD0D38600B17EAA /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA642DD0D38100B17EAA /* Transaction.swift */; };
 		485EEA672DD0D49900B17EAA /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA662DD0D49600B17EAA /* TintColor.swift */; };
 		485EEA6C2DD0D6AF00B17EAA /* Recents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA6B2DD0D6AF00B17EAA /* Recents.swift */; };
@@ -25,6 +25,7 @@
 		485EEA752DD0DEFE00B17EAA /* Recents+Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA742DD0DEF800B17EAA /* Recents+Views.swift */; };
 		485EEA782DD0DFDF00B17EAA /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA772DD0DFDA00B17EAA /* View+Extension.swift */; };
 		485EEA7A2DD1AF6B00B17EAA /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA792DD1AF6400B17EAA /* Date+Extension.swift */; };
+		485EEA7D2DD3ADCE00B17EAA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA7C2DD3ADCC00B17EAA /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +38,7 @@
 		485EEA462DD0914900B17EAA /* IntroScreen+Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IntroScreen+Views.swift"; sourceTree = "<group>"; };
 		485EEA482DD0A56C00B17EAA /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		485EEA4C2DD0A91000B17EAA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		485EEA622DD0D31900B17EAA /* Categroy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categroy.swift; sourceTree = "<group>"; };
+		485EEA622DD0D31900B17EAA /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		485EEA642DD0D38100B17EAA /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		485EEA662DD0D49600B17EAA /* TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintColor.swift; sourceTree = "<group>"; };
 		485EEA6B2DD0D6AF00B17EAA /* Recents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recents.swift; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		485EEA742DD0DEF800B17EAA /* Recents+Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recents+Views.swift"; sourceTree = "<group>"; };
 		485EEA772DD0DFDA00B17EAA /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		485EEA792DD1AF6400B17EAA /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		485EEA7C2DD3ADCC00B17EAA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				485EEA732DD0D70300B17EAA /* Intro */,
 				485EEA682DD0D68900B17EAA /* TabViews */,
+				485EEA7B2DD3ADBA00B17EAA /* Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -111,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				485EEA482DD0A56C00B17EAA /* Tab.swift */,
-				485EEA622DD0D31900B17EAA /* Categroy.swift */,
+				485EEA622DD0D31900B17EAA /* Category.swift */,
 				485EEA642DD0D38100B17EAA /* Transaction.swift */,
 				485EEA662DD0D49600B17EAA /* TintColor.swift */,
 			);
@@ -155,6 +158,14 @@
 				485EEA742DD0DEF800B17EAA /* Recents+Views.swift */,
 			);
 			path = Recents;
+			sourceTree = "<group>";
+		};
+		485EEA7B2DD3ADBA00B17EAA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				485EEA7C2DD3ADCC00B17EAA /* CardView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +256,8 @@
 				485EEA4D2DD0A91400B17EAA /* Constants.swift in Sources */,
 				485EEA672DD0D49900B17EAA /* TintColor.swift in Sources */,
 				485EEA782DD0DFDF00B17EAA /* View+Extension.swift in Sources */,
-				485EEA632DD0D31E00B17EAA /* Categroy.swift in Sources */,
+				485EEA7D2DD3ADCE00B17EAA /* CardView.swift in Sources */,
+				485EEA632DD0D31E00B17EAA /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

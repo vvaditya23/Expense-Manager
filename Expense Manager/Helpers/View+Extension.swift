@@ -32,4 +32,12 @@ extension View {
         formformat.dateFormat = format
         return formformat.string(from: date)
     }
+
+    func formatCurrency(_ value: Double, decimalPlaces: Int = 2) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.maximumFractionDigits = decimalPlaces
+
+        return formatter.string(from: .init(value: value)) ?? ""
+    }
 }
