@@ -14,7 +14,10 @@ struct Recents: View {
     // View peoperties
     @State var startDate: Date = .now.startOfMonth
     @State var endDate: Date = .now.endOfMonth
-
+    @State var selectedCategory: Category = .expense
+    
+    // For snappy animation
+    @Namespace var animation
     var body: some View {
         GeometryReader {
             // For animation
@@ -38,6 +41,7 @@ struct Recents: View {
                             CardView(income: 200, expense: 300)
 
                             // Custom segmented control here
+                            customSegmentedControl()
                         } header: {
                             headerView(size)
                         }
