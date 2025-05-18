@@ -32,3 +32,62 @@ struct Transaction: Identifiable {
         return tints.first(where: { $0.colorName == tintColor })?.value ?? appTint
     }
 }
+
+var sampleTransactions: [Transaction] = [
+    .init(
+        title: "Groceries",
+        remarks: "Weekly shopping at Walmart",
+        amount: 1200.50,
+        dateAdded: Date(),
+        category: .expense,
+        tintColor: tints.randomElement()!
+    ),
+    .init(
+        title: "Salary",
+        remarks: "Monthly paycheck",
+        amount: 25000.00,
+        dateAdded: Date().addingTimeInterval(-86400 * 15),
+        category: .income,
+        tintColor: tints.randomElement()!
+    ),
+    .init(
+        title: "Coffee",
+        remarks: "Starbucks morning coffee",
+        amount: 50.75,
+        dateAdded: Date().addingTimeInterval(-86400 * 2),
+        category: .expense,
+        tintColor: tints.randomElement()!
+    ),
+    .init(
+        title: "Rent",
+        remarks: "Monthly apartment rent",
+        amount: 9000.00,
+        dateAdded: Date().addingTimeInterval(-86400 * 30),
+        category: .expense,
+        tintColor: tints.randomElement()!
+    ),
+    .init(
+        title: "Gym Membership",
+        remarks: "Monthly gym subscription",
+        amount: 500.00,
+        dateAdded: Date().addingTimeInterval(-86400 * 10),
+        category: .expense,
+        tintColor: tints.randomElement()!
+    ),
+    .init(
+        title: "Freelance Project",
+        remarks: "Web development project",
+        amount: 8000.00,
+        dateAdded: Date().addingTimeInterval(-86400 * 7),
+        category: .income,
+        tintColor: tints.randomElement()!
+    ),
+    .init(
+        title: "Utilities",
+        remarks: "Electricity bill payment",
+        amount: 1500.00,
+        dateAdded: Date().addingTimeInterval(-86400 * 5),
+        category: .expense,
+        tintColor: tints.randomElement()!
+    )
+]

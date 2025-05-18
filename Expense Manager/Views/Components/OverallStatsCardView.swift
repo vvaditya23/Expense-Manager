@@ -1,5 +1,5 @@
 //
-//  CardView.swift
+//  OverallStatsCardView.swift
 //  Expense Manager
 //
 //  Created by Aditya on 13/05/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CardView: View {
+struct OverallStatsCardView: View {
     let income: Double
     let expense: Double
 
@@ -64,6 +64,6 @@ struct CardView: View {
 
 #Preview {
     ScrollView {
-        CardView(income: 500, expense: 400)
+        OverallStatsCardView(income: 500, expense: 400)
     }
 }

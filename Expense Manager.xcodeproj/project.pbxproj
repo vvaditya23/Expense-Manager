@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48113E162DD9C34A00B25AE6 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48113E152DD9C34300B25AE6 /* TransactionCardView.swift */; };
 		485EEA402DD0903900B17EAA /* IntroScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA3E2DD0903900B17EAA /* IntroScreen.swift */; };
 		485EEA412DD0903900B17EAA /* Expense_ManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA3D2DD0903900B17EAA /* Expense_ManagerApp.swift */; };
 		485EEA422DD0903900B17EAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA3C2DD0903900B17EAA /* ContentView.swift */; };
@@ -25,10 +26,11 @@
 		485EEA752DD0DEFE00B17EAA /* Recents+Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA742DD0DEF800B17EAA /* Recents+Views.swift */; };
 		485EEA782DD0DFDF00B17EAA /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA772DD0DFDA00B17EAA /* View+Extension.swift */; };
 		485EEA7A2DD1AF6B00B17EAA /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA792DD1AF6400B17EAA /* Date+Extension.swift */; };
-		485EEA7D2DD3ADCE00B17EAA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA7C2DD3ADCC00B17EAA /* CardView.swift */; };
+		485EEA7D2DD3ADCE00B17EAA /* OverallStatsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA7C2DD3ADCC00B17EAA /* OverallStatsCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48113E152DD9C34300B25AE6 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
 		485EEA232DD0665900B17EAA /* Expense Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expense Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		485EEA392DD0903900B17EAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		485EEA3B2DD0903900B17EAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,7 +50,7 @@
 		485EEA742DD0DEF800B17EAA /* Recents+Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recents+Views.swift"; sourceTree = "<group>"; };
 		485EEA772DD0DFDA00B17EAA /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		485EEA792DD1AF6400B17EAA /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
-		485EEA7C2DD3ADCC00B17EAA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		485EEA7C2DD3ADCC00B17EAA /* OverallStatsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverallStatsCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +165,8 @@
 		485EEA7B2DD3ADBA00B17EAA /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				485EEA7C2DD3ADCC00B17EAA /* CardView.swift */,
+				485EEA7C2DD3ADCC00B17EAA /* OverallStatsCardView.swift */,
+				48113E152DD9C34300B25AE6 /* TransactionCardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				485EEA6E2DD0D6BF00B17EAA /* Search.swift in Sources */,
 				485EEA722DD0D6D500B17EAA /* Settings.swift in Sources */,
 				485EEA402DD0903900B17EAA /* IntroScreen.swift in Sources */,
+				48113E162DD9C34A00B25AE6 /* TransactionCardView.swift in Sources */,
 				485EEA7A2DD1AF6B00B17EAA /* Date+Extension.swift in Sources */,
 				485EEA412DD0903900B17EAA /* Expense_ManagerApp.swift in Sources */,
 				485EEA652DD0D38600B17EAA /* Transaction.swift in Sources */,
@@ -256,7 +260,7 @@
 				485EEA4D2DD0A91400B17EAA /* Constants.swift in Sources */,
 				485EEA672DD0D49900B17EAA /* TintColor.swift in Sources */,
 				485EEA782DD0DFDF00B17EAA /* View+Extension.swift in Sources */,
-				485EEA7D2DD3ADCE00B17EAA /* CardView.swift in Sources */,
+				485EEA7D2DD3ADCE00B17EAA /* OverallStatsCardView.swift in Sources */,
 				485EEA632DD0D31E00B17EAA /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

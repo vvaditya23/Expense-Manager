@@ -38,10 +38,14 @@ struct Recents: View {
                             .hSpacing(.leading)
                             
                             // Overall stats card view
-                            CardView(income: 200, expense: 300)
+                            OverallStatsCardView(income: 200, expense: 300)
 
-                            // Custom segmented control here
                             customSegmentedControl()
+                                .padding(.bottom, 10)
+
+                            ForEach(sampleTransactions) { transaction in
+                                TransactionCardView(transaction: transaction)
+                            }
                         } header: {
                             headerView(size)
                         }
