@@ -10,6 +10,7 @@
 		48113E162DD9C34A00B25AE6 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48113E152DD9C34300B25AE6 /* TransactionCardView.swift */; };
 		48113E182DD9CAE500B25AE6 /* CustomSwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48113E172DD9CADF00B25AE6 /* CustomSwipeAction.swift */; };
 		48113E1A2DD9D4D500B25AE6 /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48113E192DD9D4CE00B25AE6 /* SwipeAction.swift */; };
+		484EF1742DDE315900A810A2 /* DateFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484EF1732DDE315000A810A2 /* DateFilterView.swift */; };
 		485EEA402DD0903900B17EAA /* IntroScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA3E2DD0903900B17EAA /* IntroScreen.swift */; };
 		485EEA412DD0903900B17EAA /* Expense_ManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA3D2DD0903900B17EAA /* Expense_ManagerApp.swift */; };
 		485EEA422DD0903900B17EAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EEA3C2DD0903900B17EAA /* ContentView.swift */; };
@@ -35,6 +36,7 @@
 		48113E152DD9C34300B25AE6 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
 		48113E172DD9CADF00B25AE6 /* CustomSwipeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwipeAction.swift; sourceTree = "<group>"; };
 		48113E192DD9D4CE00B25AE6 /* SwipeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAction.swift; sourceTree = "<group>"; };
+		484EF1732DDE315000A810A2 /* DateFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFilterView.swift; sourceTree = "<group>"; };
 		485EEA232DD0665900B17EAA /* Expense Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expense Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		485EEA392DD0903900B17EAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		485EEA3B2DD0903900B17EAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		485EEA7B2DD3ADBA00B17EAA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				484EF1732DDE315000A810A2 /* DateFilterView.swift */,
 				485EEA7C2DD3ADCC00B17EAA /* OverallStatsCardView.swift */,
 				48113E152DD9C34300B25AE6 /* TransactionCardView.swift */,
 				48113E172DD9CADF00B25AE6 /* CustomSwipeAction.swift */,
@@ -258,6 +261,7 @@
 				48113E162DD9C34A00B25AE6 /* TransactionCardView.swift in Sources */,
 				485EEA7A2DD1AF6B00B17EAA /* Date+Extension.swift in Sources */,
 				485EEA412DD0903900B17EAA /* Expense_ManagerApp.swift in Sources */,
+				484EF1742DDE315900A810A2 /* DateFilterView.swift in Sources */,
 				485EEA652DD0D38600B17EAA /* Transaction.swift in Sources */,
 				485EEA492DD0A56E00B17EAA /* Tab.swift in Sources */,
 				485EEA6C2DD0D6AF00B17EAA /* Recents.swift in Sources */,

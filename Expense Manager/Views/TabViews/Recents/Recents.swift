@@ -15,6 +15,7 @@ struct Recents: View {
     @State var startDate: Date = .now.startOfMonth
     @State var endDate: Date = .now.endOfMonth
     @State var selectedCategory: Category = .expense
+    @State var showDateFilter: Bool = false
     
     // For snappy animation
     @Namespace var animation
@@ -29,7 +30,7 @@ struct Recents: View {
                         Section {
                             // Date filter button
                             Button {
-                                // Date button action here
+                                showDateFilter = true
                             } label: {
                                 Text("\(format(date: startDate, format: "dd - MMM yy")) to \(format(date: endDate, format: "dd - MMM yy"))")
                                     .font(.caption2)
@@ -55,6 +56,26 @@ struct Recents: View {
                     .padding(15)
                 }
                 .background(.gray.opacity(0.15))
+            }
+            .overlay {
+                ZStack {
+                    if showDateFilter {
+                        DateFilterView(
+                            start: startDate,
+                            end: endDate,
+                            onSubmit: { star, end in
+                                startDate = star
+                                endDate = end
+                                showDateFilter = false
+                            },
+                            onClose: {
+                                showDateFilter = false
+                            }
+                        )
+                        .transition(.move(edge: .leading))
+                    }
+                }
+                .animation(.snappy, value: showDateFilter)
             }
         }
     }
