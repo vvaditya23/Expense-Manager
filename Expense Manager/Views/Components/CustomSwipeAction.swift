@@ -38,12 +38,6 @@ struct CustomSwipeAction<Content: View>: View {
                 LazyHStack(spacing: 0) {
                     content
                         .containerRelativeFrame(.horizontal)    // To take full available space
-                        .background {   // FIXME: bg color is visible when segmented control is changed
-                            if let firstAction = actions.first {
-                                Rectangle()
-                                    .fill(firstAction.tint)
-                            }
-                        }
                         .id(viewdID)
 
                     ActionButtons {
@@ -63,13 +57,6 @@ struct CustomSwipeAction<Content: View>: View {
             }
             .scrollIndicators(.hidden)
             .scrollTargetBehavior(.viewAligned)
-            .background {   // Gives a feel that button is being dragged as user performs horizontal swipe action
-                // FIXME: bg color is visible when segmented control is changed
-                if let lastAction = actions.last {
-                    Rectangle()
-                        .fill(lastAction.tint)
-                }
-            }
             .clipShape(.rect(cornerRadius: 10)) // Maintain corner radius when in swipe action
         }
     }
