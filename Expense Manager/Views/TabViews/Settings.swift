@@ -8,8 +8,32 @@
 import SwiftUI
 
 struct Settings: View {
+    // User properties
+    @AppStorage("UserName") var userName: String = ""
+
+    // App lock properties
+    @AppStorage("isAppLockEnabled") var isAppLockEnabled: Bool = false
+    @AppStorage("isBackgroundLockEnabled") var isBackgroundLockEnabled: Bool = false
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List {
+                Section("username".capitalized) {
+                    TextField("someName", text: $userName)
+                }
+
+                Section("app lock".capitalized) {
+                    Toggle("Enable App Lock", isOn: $isAppLockEnabled)
+
+                    if isAppLockEnabled {
+                        Toggle("Lock when app goes backgeound", isOn: $isBackgroundLockEnabled)
+                            .transition(.opacity)
+                    }
+                }
+            }
+            .animation(.easeInOut, value: isAppLockEnabled)
+            .navigationTitle("Settings")
+        }
     }
 }
 
